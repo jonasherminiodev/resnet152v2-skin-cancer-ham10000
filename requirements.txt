@@ -1,0 +1,9 @@
+Flask
+Flask-Bootstrap
+Pillow
+scikit-learn
+Flask-SQLAlchemy
+werkzeug
+tensorflow==2.15.0
+keras==2.15.0
+huggingface-hub

@@ -1,0 +1,1174 @@
+<html lang="pt-br" style="height: auto;">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TCC Jonas Herminio</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='plugins/fontawesome-free/css/all.min.css')}}">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='dist/css/adminlte.min.css')}}">
+</head>
+
+<body class="sidebar-mini sidebar-collapse sidebar-closed" style="height: auto;">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="{{ url_for('login') }}" class="nav-link">Início</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="mailto:jonasherminio@live.com" class="nav-link">Contato</a>
+        </li>
+      </ul>
+
+      <!-- Right navbar links -->
+
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a>
+        <!-- <a href="{{ url_for('static', filename='index3.html" class="brand-link')}}"> -->
+        <!-- <img src="{{ url_for('static', filename='dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> -->
+        <span class="brand-text font-weight-light">1.0</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user (optional) -->
+
+
+        <!-- SidebarSearch Form -->
+        <div class="form-inline">
+          <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-sidebar">
+                <i class="fas fa-search fa-fw"></i>
+              </button>
+            </div>
+          </div>
+          <div class="sidebar-search-results">
+            <div class="list-group"><a href="#" class="list-group-item">
+                <div class="search-title"><strong class="text-light"></strong>N<strong
+                    class="text-light"></strong>o<strong class="text-light"></strong> <strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>l<strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>m<strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>n<strong
+                    class="text-light"></strong>t<strong class="text-light"></strong> <strong
+                    class="text-light"></strong>f<strong class="text-light"></strong>o<strong
+                    class="text-light"></strong>u<strong class="text-light"></strong>n<strong
+                    class="text-light"></strong>d<strong class="text-light"></strong>!<strong
+                    class="text-light"></strong></div>
+                <div class="search-path"></div>
+              </a><a href="#" class="list-group-item">
+                <div class="search-title"><strong class="text-light"></strong>N<strong
+                    class="text-light"></strong>o<strong class="text-light"></strong> <strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>l<strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>m<strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>n<strong
+                    class="text-light"></strong>t<strong class="text-light"></strong> <strong
+                    class="text-light"></strong>f<strong class="text-light"></strong>o<strong
+                    class="text-light"></strong>u<strong class="text-light"></strong>n<strong
+                    class="text-light"></strong>d<strong class="text-light"></strong>!<strong
+                    class="text-light"></strong></div>
+                <div class="search-path"></div>
+              </a><a href="#" class="list-group-item">
+                <div class="search-title"><strong class="text-light"></strong>N<strong
+                    class="text-light"></strong>o<strong class="text-light"></strong> <strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>l<strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>m<strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>n<strong
+                    class="text-light"></strong>t<strong class="text-light"></strong> <strong
+                    class="text-light"></strong>f<strong class="text-light"></strong>o<strong
+                    class="text-light"></strong>u<strong class="text-light"></strong>n<strong
+                    class="text-light"></strong>d<strong class="text-light"></strong>!<strong
+                    class="text-light"></strong></div>
+                <div class="search-path"></div>
+              </a><a href="#" class="list-group-item">
+                <div class="search-title"><strong class="text-light"></strong>N<strong
+                    class="text-light"></strong>o<strong class="text-light"></strong> <strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>l<strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>m<strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>n<strong
+                    class="text-light"></strong>t<strong class="text-light"></strong> <strong
+                    class="text-light"></strong>f<strong class="text-light"></strong>o<strong
+                    class="text-light"></strong>u<strong class="text-light"></strong>n<strong
+                    class="text-light"></strong>d<strong class="text-light"></strong>!<strong
+                    class="text-light"></strong></div>
+                <div class="search-path"></div>
+              </a><a href="#" class="list-group-item">
+                <div class="search-title"><strong class="text-light"></strong>N<strong
+                    class="text-light"></strong>o<strong class="text-light"></strong> <strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>l<strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>m<strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>n<strong
+                    class="text-light"></strong>t<strong class="text-light"></strong> <strong
+                    class="text-light"></strong>f<strong class="text-light"></strong>o<strong
+                    class="text-light"></strong>u<strong class="text-light"></strong>n<strong
+                    class="text-light"></strong>d<strong class="text-light"></strong>!<strong
+                    class="text-light"></strong></div>
+                <div class="search-path"></div>
+              </a><a href="#" class="list-group-item">
+                <div class="search-title"><strong class="text-light"></strong>N<strong
+                    class="text-light"></strong>o<strong class="text-light"></strong> <strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>l<strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>m<strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>n<strong
+                    class="text-light"></strong>t<strong class="text-light"></strong> <strong
+                    class="text-light"></strong>f<strong class="text-light"></strong>o<strong
+                    class="text-light"></strong>u<strong class="text-light"></strong>n<strong
+                    class="text-light"></strong>d<strong class="text-light"></strong>!<strong
+                    class="text-light"></strong></div>
+                <div class="search-path"></div>
+              </a><a href="#" class="list-group-item">
+                <div class="search-title"><strong class="text-light"></strong>N<strong
+                    class="text-light"></strong>o<strong class="text-light"></strong> <strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>l<strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>m<strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>n<strong
+                    class="text-light"></strong>t<strong class="text-light"></strong> <strong
+                    class="text-light"></strong>f<strong class="text-light"></strong>o<strong
+                    class="text-light"></strong>u<strong class="text-light"></strong>n<strong
+                    class="text-light"></strong>d<strong class="text-light"></strong>!<strong
+                    class="text-light"></strong></div>
+                <div class="search-path"></div>
+              </a><a href="#" class="list-group-item">
+                <div class="search-title"><strong class="text-light"></strong>N<strong
+                    class="text-light"></strong>o<strong class="text-light"></strong> <strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>l<strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>m<strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>n<strong
+                    class="text-light"></strong>t<strong class="text-light"></strong> <strong
+                    class="text-light"></strong>f<strong class="text-light"></strong>o<strong
+                    class="text-light"></strong>u<strong class="text-light"></strong>n<strong
+                    class="text-light"></strong>d<strong class="text-light"></strong>!<strong
+                    class="text-light"></strong></div>
+                <div class="search-path"></div>
+              </a><a href="#" class="list-group-item">
+                <div class="search-title"><strong class="text-light"></strong>N<strong
+                    class="text-light"></strong>o<strong class="text-light"></strong> <strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>l<strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>m<strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>n<strong
+                    class="text-light"></strong>t<strong class="text-light"></strong> <strong
+                    class="text-light"></strong>f<strong class="text-light"></strong>o<strong
+                    class="text-light"></strong>u<strong class="text-light"></strong>n<strong
+                    class="text-light"></strong>d<strong class="text-light"></strong>!<strong
+                    class="text-light"></strong></div>
+                <div class="search-path"></div>
+              </a><a href="#" class="list-group-item">
+                <div class="search-title"><strong class="text-light"></strong>N<strong
+                    class="text-light"></strong>o<strong class="text-light"></strong> <strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>l<strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>m<strong
+                    class="text-light"></strong>e<strong class="text-light"></strong>n<strong
+                    class="text-light"></strong>t<strong class="text-light"></strong> <strong
+                    class="text-light"></strong>f<strong class="text-light"></strong>o<strong
+                    class="text-light"></strong>u<strong class="text-light"></strong>n<strong
+                    class="text-light"></strong>d<strong class="text-light"></strong>!<strong
+                    class="text-light"></strong></div>
+                <div class="search-path"></div>
+              </a></div>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            <li class="nav-item">
+
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="{{ url_for('static', filename='index.html')}}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Dashboard v1</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{ url_for('static', filename='index2.html')}}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Dashboard v2</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{ url_for('static', filename='index3.html')}}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Dashboard v3</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+
+
+
+            <li class="nav-item">
+              <a href="#" class="nav-link active">
+                <i class="nav-icon fas fa-edit"></i>
+                <p>
+                  Análises
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview" style="display: none;">
+                <li class="nav-item">
+                  <!-- <a href="{{ url_for('static', filename='forms/general.html')}}" class="nav-link active"> -->
+                    <a class="nav-link active">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Lesões de Pele</p>
+                  </a>
+                </li>
+
+
+
+              </ul>
+            </li>
+
+
+
+
+
+
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-plus-square"></i>
+                <p>
+                  Configurações
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview" style="display: none;">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>
+                      Login &amp; Registro
+                      <i class="fas fa-angle-left right"></i>
+                    </p>
+                  </a>
+                  <ul class="nav nav-treeview" style="display: none;">
+                    <li class="nav-item">
+                      <a href="{{ url_for('login') }}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Login</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="{{ url_for('register') }}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Registro</p>
+                      </a>
+                    </li>
+
+
+                  </ul>
+                </li>
+
+
+
+
+
+
+
+
+
+              </ul>
+            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="min-height: 714px;">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1>Análise de Lesões de Pele</h1>
+            </div>
+
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- left column -->
+            <div class="col-md-6">
+              <!-- general form elements -->
+              <div class="card card-primary">
+                <div class="card-header">
+                  <h3 class="card-title">Upload da Imagem</h3>
+                </div>
+                <!-- /.card-header -->
+                <!-- form start -->
+                <form id="uploadForm" action="/" method="post" enctype="multipart/form-data">
+                  <div class="card-body">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <div class="custom-file">
+                          <!-- <input type="file" class="form-control-file" id="imageFile" accept="image/*" required> -->
+                          <label class="custom-file-label" for="imageFile">Selecionar Imagem</label>
+                          <input type="file" class="form-control-file" id="imageFile" name="file" accept="image/*"
+                            required>
+                          <!-- <button type="submit" id="submitButton" class="btn btn-primary">Enviar</button> -->
+                          <!-- <div class="form-group">
+                            <label for="imageFile">Selecione uma imagem:</label>
+                            <input type="file" class="form-control-file" id="imageFile" name="file" accept="image/*" required>
+                        </div> -->
+                          <button type="submit" id="submitButton" class="btn btn-primary">Enviar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>              
+                  <!-- /.card-body -->
+                  <div class="card-footer" style="background-color: #FFFFFF;">
+                    <button type="submit" class="btn btn-primary"
+                      style="background-color: #28A745;border-color: #28A745;"
+                      onclick="window.location.href = window.location.href.split('?')[0] + '?cache_buster=' + new Date().getTime();">Limpar</button>
+                  </div>
+                </form>
+                <script>
+                  document.getElementById('imageFile').addEventListener('change', function () {
+                
+                    document.getElementById('uploadForm').submit(); 
+                    
+                  }); 
+                </script>
+                <!-- IMAGEM -->
+                <div class="col-12" id="imageContainer" >
+                  <div class="card card-primary">
+                    <div class="card-header">
+                      <h4 class="card-title">Imagem Selecionada</h4>
+                    </div>
+                    <div class="card-body">
+                      <div class="row justify-content-center">
+                        <div class="col-sm-5">
+                          {% if img_up %}
+                          <img src="{{ url_for('static', filename=img_up) }}" class="img-fluid mb-2" id="selectedImage">
+                          {% endif %}
+                          <!-- <img src="https://via.placeholder.com/300/FFFFFF?text=1" class="img-fluid mb-2"> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- FIM IMAGEM -->
+                <!-- <script>
+                  document.getElementById('imageFile').addEventListener('change', function() {
+                    var imageContainer = document.getElementById('imageContainer');
+                    if (this.files && this.files[0]) {
+                      imageContainer.style.display = '';
+                    } else {
+                      imageContainer.style.display = 'none';
+                    }
+                  });
+                </script>     -->
+              </div>
+              <!-- /.card -->
+
+              <!-- general form elements -->
+
+              <!-- /.card -->
+
+              <!-- Input addon -->
+
+              <!-- /.card -->
+              <!-- Horizontal Form -->
+
+              <!-- /.card -->
+
+            </div>
+            <!--/.col (left) -->
+            <!-- right column -->
+            <div class="col-md-6">
+              <!-- Form Element sizes -->
+              <div class="card card-success">
+                <div class="card-header">
+                  <h3 class="card-title">Resultados</h3>
+                </div>
+                <div class="card-body">
+                  {% if results %}
+                  <ul class="list-group">
+                      {% for result in results %}
+                      <li class="list-group-item">{{ result.class }}: {{ result.probability }}</li>
+                      {% endfor %}
+                  </ul>
+                  {% endif %}
+                  <!-- <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+                  <br>
+                  <input class="form-control" type="text" placeholder="Default input">
+                  <br>
+                  <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm"> -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+
+
+              <!-- /.card -->
+
+              <!-- general form elements disabled -->
+
+              <!-- /.card -->
+              <!-- general form elements disabled -->
+
+              <!-- /.card -->
+            </div>
+            <!--/.col (right) -->
+          </div>
+          <!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+      <div class="float-right d-none d-sm-block">
+        <b>Version</b> 1.0.0
+      </div>
+      <strong>        Este é um projeto de Trabalho de Conclusão de Curso (TCC) de Jonas Herminio. Contato: <a href="mailto:jonasherminio@live.com">jonasherminio@live.com</a> </strong>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark" style="display: none;">
+      <!-- Control sidebar content goes here -->
+      <div class="p-3 control-sidebar-content" style="">
+        <h5>Customize AdminLTE</h5>
+        <hr class="mb-2">
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Dark Mode</span></div>
+        <h6>Header Options</h6>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Dropdown Legacy Offset</span></div>
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>No border</span></div>
+        <h6>Sidebar Options</h6>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Collapsed</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" checked="checked" class="mr-1"><span>Sidebar Mini</span>
+        </div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Mini MD</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Mini XS</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Flat Style</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Legacy Style</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Compact</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Child Indent</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Child Hide on Collapse</span></div>
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Disable Hover/Focus Auto-Expand</span>
+        </div>
+        <h6>Footer Options</h6>
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div>
+        <h6>Small Text Options</h6>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Body</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Navbar</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Brand</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Nav</span></div>
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Footer</span></div>
+        <h6>Navbar Variants</h6>
+        <div class="d-flex"><select class="custom-select mb-3 text-light border-0 bg-white">
+            <option class="bg-primary">Primary</option>
+            <option class="bg-secondary">Secondary</option>
+            <option class="bg-info">Info</option>
+            <option class="bg-success">Success</option>
+            <option class="bg-danger">Danger</option>
+            <option class="bg-indigo">Indigo</option>
+            <option class="bg-purple">Purple</option>
+            <option class="bg-pink">Pink</option>
+            <option class="bg-navy">Navy</option>
+            <option class="bg-lightblue">Lightblue</option>
+            <option class="bg-teal">Teal</option>
+            <option class="bg-cyan">Cyan</option>
+            <option class="bg-dark">Dark</option>
+            <option class="bg-gray-dark">Gray dark</option>
+            <option class="bg-gray">Gray</option>
+            <option class="bg-light">Light</option>
+            <option class="bg-warning">Warning</option>
+            <option class="bg-white">White</option>
+            <option class="bg-orange">Orange</option>
+          </select></div>
+        <h6>Accent Color Variants</h6>
+        <div class="d-flex"></div><select class="custom-select mb-3 border-0">
+          <option>None Selected</option>
+          <option class="bg-primary">Primary</option>
+          <option class="bg-warning">Warning</option>
+          <option class="bg-info">Info</option>
+          <option class="bg-danger">Danger</option>
+          <option class="bg-success">Success</option>
+          <option class="bg-indigo">Indigo</option>
+          <option class="bg-lightblue">Lightblue</option>
+          <option class="bg-navy">Navy</option>
+          <option class="bg-purple">Purple</option>
+          <option class="bg-fuchsia">Fuchsia</option>
+          <option class="bg-pink">Pink</option>
+          <option class="bg-maroon">Maroon</option>
+          <option class="bg-orange">Orange</option>
+          <option class="bg-lime">Lime</option>
+          <option class="bg-teal">Teal</option>
+          <option class="bg-olive">Olive</option>
+        </select>
+        <h6>Dark Sidebar Variants</h6>
+        <div class="d-flex"></div><select class="custom-select mb-3 text-light border-0 bg-primary">
+          <option>None Selected</option>
+          <option class="bg-primary">Primary</option>
+          <option class="bg-warning">Warning</option>
+          <option class="bg-info">Info</option>
+          <option class="bg-danger">Danger</option>
+          <option class="bg-success">Success</option>
+          <option class="bg-indigo">Indigo</option>
+          <option class="bg-lightblue">Lightblue</option>
+          <option class="bg-navy">Navy</option>
+          <option class="bg-purple">Purple</option>
+          <option class="bg-fuchsia">Fuchsia</option>
+          <option class="bg-pink">Pink</option>
+          <option class="bg-maroon">Maroon</option>
+          <option class="bg-orange">Orange</option>
+          <option class="bg-lime">Lime</option>
+          <option class="bg-teal">Teal</option>
+          <option class="bg-olive">Olive</option>
+        </select>
+        <h6>Light Sidebar Variants</h6>
+        <div class="d-flex"></div><select class="custom-select mb-3 border-0">
+          <option>None Selected</option>
+          <option class="bg-primary">Primary</option>
+          <option class="bg-warning">Warning</option>
+          <option class="bg-info">Info</option>
+          <option class="bg-danger">Danger</option>
+          <option class="bg-success">Success</option>
+          <option class="bg-indigo">Indigo</option>
+          <option class="bg-lightblue">Lightblue</option>
+          <option class="bg-navy">Navy</option>
+          <option class="bg-purple">Purple</option>
+          <option class="bg-fuchsia">Fuchsia</option>
+          <option class="bg-pink">Pink</option>
+          <option class="bg-maroon">Maroon</option>
+          <option class="bg-orange">Orange</option>
+          <option class="bg-lime">Lime</option>
+          <option class="bg-teal">Teal</option>
+          <option class="bg-olive">Olive</option>
+        </select>
+        <h6>Brand Logo Variants</h6>
+        <div class="d-flex"></div><select class="custom-select mb-3 border-0">
+          <option>None Selected</option>
+          <option class="bg-primary">Primary</option>
+          <option class="bg-secondary">Secondary</option>
+          <option class="bg-info">Info</option>
+          <option class="bg-success">Success</option>
+          <option class="bg-danger">Danger</option>
+          <option class="bg-indigo">Indigo</option>
+          <option class="bg-purple">Purple</option>
+          <option class="bg-pink">Pink</option>
+          <option class="bg-navy">Navy</option>
+          <option class="bg-lightblue">Lightblue</option>
+          <option class="bg-teal">Teal</option>
+          <option class="bg-cyan">Cyan</option>
+          <option class="bg-dark">Dark</option>
+          <option class="bg-gray-dark">Gray dark</option>
+          <option class="bg-gray">Gray</option>
+          <option class="bg-light">Light</option>
+          <option class="bg-warning">Warning</option>
+          <option class="bg-white">White</option>
+          <option class="bg-orange">Orange</option>clear
+        </select>
+      </div>
+      <div class="p-3 control-sidebar-content" style="">
+        <h5>Customize AdminLTE</h5>
+        <hr class="mb-2">
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Dark Mode</span></div>
+        <h6>Header Options</h6>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Dropdown Legacy Offset</span></div>
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>No border</span></div>
+        <h6>Sidebar Options</h6>
+        <div class="mb-1"><input type="checkbox" value="1" checked="checked" class="mr-1"><span>Collapsed</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" checked="checked" class="mr-1"><span>Sidebar Mini</span>
+        </div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Mini MD</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Mini XS</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Flat Style</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Legacy Style</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Compact</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Child Indent</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Child Hide on Collapse</span></div>
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Disable Hover/Focus Auto-Expand</span>
+        </div>
+        <h6>Footer Options</h6>
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div>
+        <h6>Small Text Options</h6>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Body</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Navbar</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Brand</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Nav</span></div>
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Footer</span></div>
+        <h6>Navbar Variants</h6>
+        <div class="d-flex"><select class="custom-select mb-3 text-light border-0 bg-white">
+            <option class="bg-primary">Primary</option>
+            <option class="bg-secondary">Secondary</option>
+            <option class="bg-info">Info</option>
+            <option class="bg-success">Success</option>
+            <option class="bg-danger">Danger</option>
+            <option class="bg-indigo">Indigo</option>
+            <option class="bg-purple">Purple</option>
+            <option class="bg-pink">Pink</option>
+            <option class="bg-navy">Navy</option>
+            <option class="bg-lightblue">Lightblue</option>
+            <option class="bg-teal">Teal</option>
+            <option class="bg-cyan">Cyan</option>
+            <option class="bg-dark">Dark</option>
+            <option class="bg-gray-dark">Gray dark</option>
+            <option class="bg-gray">Gray</option>
+            <option class="bg-light">Light</option>
+            <option class="bg-warning">Warning</option>
+            <option class="bg-white">White</option>
+            <option class="bg-orange">Orange</option>
+          </select></div>
+        <h6>Accent Color Variants</h6>
+        <div class="d-flex"></div><select class="custom-select mb-3 border-0">
+          <option>None Selected</option>
+          <option class="bg-primary">Primary</option>
+          <option class="bg-warning">Warning</option>
+          <option class="bg-info">Info</option>
+          <option class="bg-danger">Danger</option>
+          <option class="bg-success">Success</option>
+          <option class="bg-indigo">Indigo</option>
+          <option class="bg-lightblue">Lightblue</option>
+          <option class="bg-navy">Navy</option>
+          <option class="bg-purple">Purple</option>
+          <option class="bg-fuchsia">Fuchsia</option>
+          <option class="bg-pink">Pink</option>
+          <option class="bg-maroon">Maroon</option>
+          <option class="bg-orange">Orange</option>
+          <option class="bg-lime">Lime</option>
+          <option class="bg-teal">Teal</option>
+          <option class="bg-olive">Olive</option>
+        </select>
+        <h6>Dark Sidebar Variants</h6>
+        <div class="d-flex"></div><select class="custom-select mb-3 text-light border-0 bg-primary">
+          <option>None Selected</option>
+          <option class="bg-primary">Primary</option>
+          <option class="bg-warning">Warning</option>
+          <option class="bg-info">Info</option>
+          <option class="bg-danger">Danger</option>
+          <option class="bg-success">Success</option>
+          <option class="bg-indigo">Indigo</option>
+          <option class="bg-lightblue">Lightblue</option>
+          <option class="bg-navy">Navy</option>
+          <option class="bg-purple">Purple</option>
+          <option class="bg-fuchsia">Fuchsia</option>
+          <option class="bg-pink">Pink</option>
+          <option class="bg-maroon">Maroon</option>
+          <option class="bg-orange">Orange</option>
+          <option class="bg-lime">Lime</option>
+          <option class="bg-teal">Teal</option>
+          <option class="bg-olive">Olive</option>
+        </select>
+        <h6>Light Sidebar Variants</h6>
+        <div class="d-flex"></div><select class="custom-select mb-3 border-0">
+          <option>None Selected</option>
+          <option class="bg-primary">Primary</option>
+          <option class="bg-warning">Warning</option>
+          <option class="bg-info">Info</option>
+          <option class="bg-danger">Danger</option>
+          <option class="bg-success">Success</option>
+          <option class="bg-indigo">Indigo</option>
+          <option class="bg-lightblue">Lightblue</option>
+          <option class="bg-navy">Navy</option>
+          <option class="bg-purple">Purple</option>
+          <option class="bg-fuchsia">Fuchsia</option>
+          <option class="bg-pink">Pink</option>
+          <option class="bg-maroon">Maroon</option>
+          <option class="bg-orange">Orange</option>
+          <option class="bg-lime">Lime</option>
+          <option class="bg-teal">Teal</option>
+          <option class="bg-olive">Olive</option>
+        </select>
+        <h6>Brand Logo Variants</h6>
+        <div class="d-flex"></div><select class="custom-select mb-3 border-0">
+          <option>None Selected</option>
+          <option class="bg-primary">Primary</option>
+          <option class="bg-secondary">Secondary</option>
+          <option class="bg-info">Info</option>
+          <option class="bg-success">Success</option>
+          <option class="bg-danger">Danger</option>
+          <option class="bg-indigo">Indigo</option>
+          <option class="bg-purple">Purple</option>
+          <option class="bg-pink">Pink</option>
+          <option class="bg-navy">Navy</option>
+          <option class="bg-lightblue">Lightblue</option>
+          <option class="bg-teal">Teal</option>
+          <option class="bg-cyan">Cyan</option>
+          <option class="bg-dark">Dark</option>
+          <option class="bg-gray-dark">Gray dark</option>
+          <option class="bg-gray">Gray</option>
+          <option class="bg-light">Light</option>
+          <option class="bg-warning">Warning</option>
+          <option class="bg-white">White</option>
+          <option class="bg-orange">Orange</option>clear
+        </select>
+      </div>
+      <div class="p-3 control-sidebar-content" style="">
+        <h5>Customize AdminLTE</h5>
+        <hr class="mb-2">
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Dark Mode</span></div>
+        <h6>Header Options</h6>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Dropdown Legacy Offset</span></div>
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>No border</span></div>
+        <h6>Sidebar Options</h6>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Collapsed</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" checked="checked" class="mr-1"><span>Sidebar Mini</span>
+        </div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Mini MD</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Mini XS</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Flat Style</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Legacy Style</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Compact</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Child Indent</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Child Hide on Collapse</span></div>
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Disable Hover/Focus Auto-Expand</span>
+        </div>
+        <h6>Footer Options</h6>
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div>
+        <h6>Small Text Options</h6>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Body</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Navbar</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Brand</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Nav</span></div>
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Footer</span></div>
+        <h6>Navbar Variants</h6>
+        <div class="d-flex"><select class="custom-select mb-3 text-light border-0 bg-white">
+            <option class="bg-primary">Primary</option>
+            <option class="bg-secondary">Secondary</option>
+            <option class="bg-info">Info</option>
+            <option class="bg-success">Success</option>
+            <option class="bg-danger">Danger</option>
+            <option class="bg-indigo">Indigo</option>
+            <option class="bg-purple">Purple</option>
+            <option class="bg-pink">Pink</option>
+            <option class="bg-navy">Navy</option>
+            <option class="bg-lightblue">Lightblue</option>
+            <option class="bg-teal">Teal</option>
+            <option class="bg-cyan">Cyan</option>
+            <option class="bg-dark">Dark</option>
+            <option class="bg-gray-dark">Gray dark</option>
+            <option class="bg-gray">Gray</option>
+            <option class="bg-light">Light</option>
+            <option class="bg-warning">Warning</option>
+            <option class="bg-white">White</option>
+            <option class="bg-orange">Orange</option>
+          </select></div>
+        <h6>Accent Color Variants</h6>
+        <div class="d-flex"></div><select class="custom-select mb-3 border-0">
+          <option>None Selected</option>
+          <option class="bg-primary">Primary</option>
+          <option class="bg-warning">Warning</option>
+          <option class="bg-info">Info</option>
+          <option class="bg-danger">Danger</option>
+          <option class="bg-success">Success</option>
+          <option class="bg-indigo">Indigo</option>
+          <option class="bg-lightblue">Lightblue</option>
+          <option class="bg-navy">Navy</option>
+          <option class="bg-purple">Purple</option>
+          <option class="bg-fuchsia">Fuchsia</option>
+          <option class="bg-pink">Pink</option>
+          <option class="bg-maroon">Maroon</option>
+          <option class="bg-orange">Orange</option>
+          <option class="bg-lime">Lime</option>
+          <option class="bg-teal">Teal</option>
+          <option class="bg-olive">Olive</option>
+        </select>
+        <h6>Dark Sidebar Variants</h6>
+        <div class="d-flex"></div><select class="custom-select mb-3 text-light border-0 bg-primary">
+          <option>None Selected</option>
+          <option class="bg-primary">Primary</option>
+          <option class="bg-warning">Warning</option>
+          <option class="bg-info">Info</option>
+          <option class="bg-danger">Danger</option>
+          <option class="bg-success">Success</option>
+          <option class="bg-indigo">Indigo</option>
+          <option class="bg-lightblue">Lightblue</option>
+          <option class="bg-navy">Navy</option>
+          <option class="bg-purple">Purple</option>
+          <option class="bg-fuchsia">Fuchsia</option>
+          <option class="bg-pink">Pink</option>
+          <option class="bg-maroon">Maroon</option>
+          <option class="bg-orange">Orange</option>
+          <option class="bg-lime">Lime</option>
+          <option class="bg-teal">Teal</option>
+          <option class="bg-olive">Olive</option>
+        </select>
+        <h6>Light Sidebar Variants</h6>
+        <div class="d-flex"></div><select class="custom-select mb-3 border-0">
+          <option>None Selected</option>
+          <option class="bg-primary">Primary</option>
+          <option class="bg-warning">Warning</option>
+          <option class="bg-info">Info</option>
+          <option class="bg-danger">Danger</option>
+          <option class="bg-success">Success</option>
+          <option class="bg-indigo">Indigo</option>
+          <option class="bg-lightblue">Lightblue</option>
+          <option class="bg-navy">Navy</option>
+          <option class="bg-purple">Purple</option>
+          <option class="bg-fuchsia">Fuchsia</option>
+          <option class="bg-pink">Pink</option>
+          <option class="bg-maroon">Maroon</option>
+          <option class="bg-orange">Orange</option>
+          <option class="bg-lime">Lime</option>
+          <option class="bg-teal">Teal</option>
+          <option class="bg-olive">Olive</option>
+        </select>
+        <h6>Brand Logo Variants</h6>
+        <div class="d-flex"></div><select class="custom-select mb-3 border-0">
+          <option>None Selected</option>
+          <option class="bg-primary">Primary</option>
+          <option class="bg-secondary">Secondary</option>
+          <option class="bg-info">Info</option>
+          <option class="bg-success">Success</option>
+          <option class="bg-danger">Danger</option>
+          <option class="bg-indigo">Indigo</option>
+          <option class="bg-purple">Purple</option>
+          <option class="bg-pink">Pink</option>
+          <option class="bg-navy">Navy</option>
+          <option class="bg-lightblue">Lightblue</option>
+          <option class="bg-teal">Teal</option>
+          <option class="bg-cyan">Cyan</option>
+          <option class="bg-dark">Dark</option>
+          <option class="bg-gray-dark">Gray dark</option>
+          <option class="bg-gray">Gray</option>
+          <option class="bg-light">Light</option>
+          <option class="bg-warning">Warning</option>
+          <option class="bg-white">White</option>
+          <option class="bg-orange">Orange</option>clear
+        </select>
+      </div>
+      <div class="p-3 control-sidebar-content">
+        <h5>Customize AdminLTE</h5>
+        <hr class="mb-2">
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Dark Mode</span></div>
+        <h6>Header Options</h6>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Dropdown Legacy Offset</span></div>
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>No border</span></div>
+        <h6>Sidebar Options</h6>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Collapsed</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" checked="checked" class="mr-1"><span>Sidebar Mini</span>
+        </div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Mini MD</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Mini XS</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Flat Style</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Legacy Style</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Compact</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Child Indent</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Child Hide on Collapse</span></div>
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Disable Hover/Focus Auto-Expand</span>
+        </div>
+        <h6>Footer Options</h6>
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div>
+        <h6>Small Text Options</h6>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Body</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Navbar</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Brand</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Nav</span></div>
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Footer</span></div>
+        <h6>Navbar Variants</h6>
+        <div class="d-flex"><select class="custom-select mb-3 text-light border-0 bg-white">
+            <option class="bg-primary">Primary</option>
+            <option class="bg-secondary">Secondary</option>
+            <option class="bg-info">Info</option>
+            <option class="bg-success">Success</option>
+            <option class="bg-danger">Danger</option>
+            <option class="bg-indigo">Indigo</option>
+            <option class="bg-purple">Purple</option>
+            <option class="bg-pink">Pink</option>
+            <option class="bg-navy">Navy</option>
+            <option class="bg-lightblue">Lightblue</option>
+            <option class="bg-teal">Teal</option>
+            <option class="bg-cyan">Cyan</option>
+            <option class="bg-dark">Dark</option>
+            <option class="bg-gray-dark">Gray dark</option>
+            <option class="bg-gray">Gray</option>
+            <option class="bg-light">Light</option>
+            <option class="bg-warning">Warning</option>
+            <option class="bg-white">White</option>
+            <option class="bg-orange">Orange</option>
+          </select></div>
+        <h6>Accent Color Variants</h6>
+        <div class="d-flex"></div><select class="custom-select mb-3 border-0">
+          <option>None Selected</option>
+          <option class="bg-primary">Primary</option>
+          <option class="bg-warning">Warning</option>
+          <option class="bg-info">Info</option>
+          <option class="bg-danger">Danger</option>
+          <option class="bg-success">Success</option>
+          <option class="bg-indigo">Indigo</option>
+          <option class="bg-lightblue">Lightblue</option>
+          <option class="bg-navy">Navy</option>
+          <option class="bg-purple">Purple</option>
+          <option class="bg-fuchsia">Fuchsia</option>
+          <option class="bg-pink">Pink</option>
+          <option class="bg-maroon">Maroon</option>
+          <option class="bg-orange">Orange</option>
+          <option class="bg-lime">Lime</option>
+          <option class="bg-teal">Teal</option>
+          <option class="bg-olive">Olive</option>
+        </select>
+        <h6>Dark Sidebar Variants</h6>
+        <div class="d-flex"></div><select class="custom-select mb-3 text-light border-0 bg-primary">
+          <option>None Selected</option>
+          <option class="bg-primary">Primary</option>
+          <option class="bg-warning">Warning</option>
+          <option class="bg-info">Info</option>
+          <option class="bg-danger">Danger</option>
+          <option class="bg-success">Success</option>
+          <option class="bg-indigo">Indigo</option>
+          <option class="bg-lightblue">Lightblue</option>
+          <option class="bg-navy">Navy</option>
+          <option class="bg-purple">Purple</option>
+          <option class="bg-fuchsia">Fuchsia</option>
+          <option class="bg-pink">Pink</option>
+          <option class="bg-maroon">Maroon</option>
+          <option class="bg-orange">Orange</option>
+          <option class="bg-lime">Lime</option>
+          <option class="bg-teal">Teal</option>
+          <option class="bg-olive">Olive</option>
+        </select>
+        <h6>Light Sidebar Variants</h6>
+        <div class="d-flex"></div><select class="custom-select mb-3 border-0">
+          <option>None Selected</option>
+          <option class="bg-primary">Primary</option>
+          <option class="bg-warning">Warning</option>
+          <option class="bg-info">Info</option>
+          <option class="bg-danger">Danger</option>
+          <option class="bg-success">Success</option>
+          <option class="bg-indigo">Indigo</option>
+          <option class="bg-lightblue">Lightblue</option>
+          <option class="bg-navy">Navy</option>
+          <option class="bg-purple">Purple</option>
+          <option class="bg-fuchsia">Fuchsia</option>
+          <option class="bg-pink">Pink</option>
+          <option class="bg-maroon">Maroon</option>
+          <option class="bg-orange">Orange</option>
+          <option class="bg-lime">Lime</option>
+          <option class="bg-teal">Teal</option>
+          <option class="bg-olive">Olive</option>
+        </select>
+        <h6>Brand Logo Variants</h6>
+        <div class="d-flex"></div><select class="custom-select mb-3 border-0">
+          <option>None Selected</option>
+          <option class="bg-primary">Primary</option>
+          <option class="bg-secondary">Secondary</option>
+          <option class="bg-info">Info</option>
+          <option class="bg-success">Success</option>
+          <option class="bg-danger">Danger</option>
+          <option class="bg-indigo">Indigo</option>
+          <option class="bg-purple">Purple</option>
+          <option class="bg-pink">Pink</option>
+          <option class="bg-navy">Navy</option>
+          <option class="bg-lightblue">Lightblue</option>
+          <option class="bg-teal">Teal</option>
+          <option class="bg-cyan">Cyan</option>
+          <option class="bg-dark">Dark</option>
+          <option class="bg-gray-dark">Gray dark</option>
+          <option class="bg-gray">Gray</option>
+          <option class="bg-light">Light</option>
+          <option class="bg-warning">Warning</option>
+          <option class="bg-white">White</option>
+          <option class="bg-orange">Orange</option>clear
+        </select>
+      </div>
+      <div class="p-3 control-sidebar-content">
+        <h5>Customize AdminLTE</h5>
+        <hr class="mb-2">
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Dark Mode</span></div>
+        <h6>Header Options</h6>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Dropdown Legacy Offset</span></div>
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>No border</span></div>
+        <h6>Sidebar Options</h6>
+        <div class="mb-1"><input type="checkbox" value="1" checked="checked" class="mr-1"><span>Collapsed</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" checked="checked" class="mr-1"><span>Sidebar Mini</span>
+        </div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Mini MD</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Mini XS</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Flat Style</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Legacy Style</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Compact</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Child Indent</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Child Hide on Collapse</span></div>
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Disable Hover/Focus Auto-Expand</span>
+        </div>
+        <h6>Footer Options</h6>
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div>
+        <h6>Small Text Options</h6>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Body</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Navbar</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Brand</span></div>
+        <div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Nav</span></div>
+        <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Footer</span></div>
+        <h6>Navbar Variants</h6>
+        <div class="d-flex"><select class="custom-select mb-3 text-light border-0 bg-white">
+            <option class="bg-primary">Primary</option>
+            <option class="bg-secondary">Secondary</option>
+            <option class="bg-info">Info</option>
+            <option class="bg-success">Success</option>
+            <option class="bg-danger">Danger</option>
+            <option class="bg-indigo">Indigo</option>
+            <option class="bg-purple">Purple</option>
+            <option class="bg-pink">Pink</option>
+            <option class="bg-navy">Navy</option>
+            <option class="bg-lightblue">Lightblue</option>
+            <option class="bg-teal">Teal</option>
+            <option class="bg-cyan">Cyan</option>
+            <option class="bg-dark">Dark</option>
+            <option class="bg-gray-dark">Gray dark</option>
+            <option class="bg-gray">Gray</option>
+            <option class="bg-light">Light</option>
+            <option class="bg-warning">Warning</option>
+            <option class="bg-white">White</option>
+            <option class="bg-orange">Orange</option>
+          </select></div>
+        <h6>Accent Color Variants</h6>
+        <div class="d-flex"></div><select class="custom-select mb-3 border-0">
+          <option>None Selected</option>
+          <option class="bg-primary">Primary</option>
+          <option class="bg-warning">Warning</option>
+          <option class="bg-info">Info</option>
+          <option class="bg-danger">Danger</option>
+          <option class="bg-success">Success</option>
+          <option class="bg-indigo">Indigo</option>
+          <option class="bg-lightblue">Lightblue</option>
+          <option class="bg-navy">Navy</option>
+          <option class="bg-purple">Purple</option>
+          <option class="bg-fuchsia">Fuchsia</option>
+          <option class="bg-pink">Pink</option>
+          <option class="bg-maroon">Maroon</option>
+          <option class="bg-orange">Orange</option>
+          <option class="bg-lime">Lime</option>
+          <option class="bg-teal">Teal</option>
+          <option class="bg-olive">Olive</option>
+        </select>
+        <h6>Dark Sidebar Variants</h6>
+        <div class="d-flex"></div><select class="custom-select mb-3 text-light border-0 bg-primary">
+          <option>None Selected</option>
+          <option class="bg-primary">Primary</option>
+          <option class="bg-warning">Warning</option>
+          <option class="bg-info">Info</option>
+          <option class="bg-danger">Danger</option>
+          <option class="bg-success">Success</option>
+          <option class="bg-indigo">Indigo</option>
+          <option class="bg-lightblue">Lightblue</option>
+          <option class="bg-navy">Navy</option>
+          <option class="bg-purple">Purple</option>
+          <option class="bg-fuchsia">Fuchsia</option>
+          <option class="bg-pink">Pink</option>
+          <option class="bg-maroon">Maroon</option>
+          <option class="bg-orange">Orange</option>
+          <option class="bg-lime">Lime</option>
+          <option class="bg-teal">Teal</option>
+          <option class="bg-olive">Olive</option>
+        </select>
+        <h6>Light Sidebar Variants</h6>
+        <div class="d-flex"></div><select class="custom-select mb-3 border-0">
+          <option>None Selected</option>
+          <option class="bg-primary">Primary</option>
+          <option class="bg-warning">Warning</option>
+          <option class="bg-info">Info</option>
+          <option class="bg-danger">Danger</option>
+          <option class="bg-success">Success</option>
+          <option class="bg-indigo">Indigo</option>
+          <option class="bg-lightblue">Lightblue</option>
+          <option class="bg-navy">Navy</option>
+          <option class="bg-purple">Purple</option>
+          <option class="bg-fuchsia">Fuchsia</option>
+          <option class="bg-pink">Pink</option>
+          <option class="bg-maroon">Maroon</option>
+          <option class="bg-orange">Orange</option>
+          <option class="bg-lime">Lime</option>
+          <option class="bg-teal">Teal</option>
+          <option class="bg-olive">Olive</option>
+        </select>
+        <h6>Brand Logo Variants</h6>
+        <div class="d-flex"></div><select class="custom-select mb-3 border-0">
+          <option>None Selected</option>
+          <option class="bg-primary">Primary</option>
+          <option class="bg-secondary">Secondary</option>
+          <option class="bg-info">Info</option>
+          <option class="bg-success">Success</option>
+          <option class="bg-danger">Danger</option>
+          <option class="bg-indigo">Indigo</option>
+          <option class="bg-purple">Purple</option>
+          <option class="bg-pink">Pink</option>
+          <option class="bg-navy">Navy</option>
+          <option class="bg-lightblue">Lightblue</option>
+          <option class="bg-teal">Teal</option>
+          <option class="bg-cyan">Cyan</option>
+          <option class="bg-dark">Dark</option>
+          <option class="bg-gray-dark">Gray dark</option>
+          <option class="bg-gray">Gray</option>
+          <option class="bg-light">Light</option>
+          <option class="bg-warning">Warning</option>
+          <option class="bg-white">White</option>
+          <option class="bg-orange">Orange</option>clear
+        </select>
+      </div>
+    </aside>
+    <!-- /.control-sidebar -->
+    <div id="sidebar-overlay"></div>
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="{{ url_for('static', filename='plugins/jquery/jquery.min.js')}}"></script>
+  <!-- Bootstrap 4 -->
+  <script src="{{ url_for('static', filename='plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <!-- bs-custom-file-input -->
+  <script src="{{ url_for('static', filename='plugins/bs-custom-file-input/bs-custom-file-input.min.js')}}"></script>
+  <!-- AdminLTE App -->
+  <script src="{{ url_for('static', filename='dist/js/adminlte.min.js')}}"></script>
+  <!-- Page specific script -->
+  <script>
+    $(function () {
+      bsCustomFileInput.init();
+    });
+  </script>
+
+
+</body>
+
+</html>
