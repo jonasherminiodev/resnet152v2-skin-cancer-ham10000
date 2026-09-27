@@ -82,8 +82,8 @@ Este projeto requer versões específicas do **TensorFlow (`2.15.0`)** e do **Ke
 
 #### 1. Clone este repositório
 ```bash
-git clone [https://github.com/jonasherminio/ANALISE_IMG_CANCER_DE_PELE.git](https://github.com/jonasherminio/ANALISE_IMG_CANCER_DE_PELE.git)
-cd ANALISE_IMG_CANCER_DE_PELE
+git clone [https://github.com/jonasherminio/resnet152v2-skin-cancer-ham10000.git](https://github.com/jonasherminio/resnet152v2-skin-cancer-ham10000.git)
+cd resnet152v2-skin-cancer-ham10000
 ```
 
 #### 2. Crie e ative o ambiente virtual (`.venv`)
