@@ -1,0 +1,93 @@
+# ==========================================
+# Ambientes Virtuais (Virtual Environments)
+# ==========================================
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ==========================================
+# Caches e Bytecode do Python
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+/build/
+develop-eggs/
+/dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==========================================
+# Arquivos de Sistema (macOS / Windows / Linux)
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ==========================================
+# Flask Instance e Banco de Dados (SQLite)
+# ==========================================
+instance/
+*.db
+*.sqlite
+*.sqlite3
+
+# ==========================================
+# Uploads e Imagens Geradas pela Aplicação
+# ==========================================
+uploads/
+instance/*.jpg
+instance/*.jpeg
+instance/*.png
+instance/*.webp
+/static/*.jpg
+/static/*.jpeg
+/static/*.png
+/static/*.webp
+
+# ==========================================
+# Modelos de Machine Learning e Pesos
+# (Baixados via Hugging Face ou locais)
+# ==========================================
+*.h5
+*.keras
+*.pt
+*.pth
+*.onnx
+*.bin
+
+# ==========================================
+# Variáveis de Ambiente e Segredos
+# ==========================================
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# IDEs e Editores
+# ==========================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
