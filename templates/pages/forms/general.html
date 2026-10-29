@@ -379,7 +379,7 @@
                       <div class="row justify-content-center">
                         <div class="col-sm-5">
                           {% if img_up %}
-                          <img src="{{ url_for('static', filename=img_up) }}" class="img-fluid mb-2" id="selectedImage">
+                          <img src="{{ url_for('send_analyzed_image', filename=img_up) }}" class="img-fluid mb-2" id="selectedImage">
                           {% endif %}
                           <!-- <img src="https://via.placeholder.com/300/FFFFFF?text=1" class="img-fluid mb-2"> -->
                         </div>

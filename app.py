@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, send_from_directory
 from flask_bootstrap import Bootstrap
 import numpy as np
 from keras.models import load_model
@@ -6,6 +6,7 @@ from huggingface_hub import hf_hub_download
 from PIL import Image
 from models import db, User
 from werkzeug.security import generate_password_hash, check_password_hash
+from werkzeug.utils import secure_filename
 import os
 
 #app = Flask(__name__) 
@@ -19,7 +20,8 @@ db.init_app(app)
 
 #variaveis
 IMG_AL = 150
-UPLOAD_FOLDER = 'static'
+UPLOAD_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'img_analizadas')
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -97,6 +99,10 @@ def register():
 def index():
     return render_template('pages/forms/general.html')
 
+@app.route('/img_analizadas/<path:filename>')
+def send_analyzed_image(filename):
+    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
+
 @app.route('/', methods=['POST'])
 def upload_file():
     if 'file' not in request.files:
@@ -107,7 +113,7 @@ def upload_file():
     if file and allowed_file(file.filename):
         if request.method == 'POST':
             # Obter a imagem enviada pelo usuário
-            filename = file.filename
+            filename = secure_filename(file.filename)
             filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
             file.save(filepath)
             image = Image.open(filepath)

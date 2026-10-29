@@ -55,6 +55,7 @@ instance/
 # ==========================================
 # Uploads e Imagens Geradas pela Aplicação
 # ==========================================
+img_analizadas/
 uploads/
 instance/*.jpg
 instance/*.jpeg
